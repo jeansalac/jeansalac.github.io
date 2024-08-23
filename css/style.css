@@ -19,8 +19,26 @@ h1,h2,h3,h4,h5,h6{
 }
 ul,label{
 	margin:0;
-	padding:0;
+/*	padding:0;*/
+	padding-left: 20px;
+	font-size:14px;
 }
+
+ol,label{
+	margin:0;
+/*	padding:0;*/
+	padding-left: 20px;
+	font-size:14px;
+}
+
+code {
+	font-family: Consolas,"courier new";
+	color: darkblue;
+	background-color: #f1f1f1;
+	padding: 2px;
+	font-size: 100%;
+  }
+
 body a:hover{
 	text-decoration:none;
 }

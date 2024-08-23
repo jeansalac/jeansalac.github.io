@@ -1,0 +1,403 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS257 Software Design Syllabus Fall 2024</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jean Salac, CS Education" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- animation-effect -->
+<link href="../../css/animate.min.css" rel="stylesheet"> 
+<script src="../../js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../../js/move-top.js"></script>
+<script type="text/javascript" src="../../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="../../index.html">Jean Salac</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="../../index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item"><a href="../../research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item menu__item"><a href="../../teaching.html" class="menu__link"><span class="menu__helper">Teaching</span></a></li>
+							<li class="menu__item"><a href="../../impact.html" class="menu__link"><span class="menu__helper">Impact</span></a></li>
+							<li class="menu__item"><a href="../../media.html" class="menu__link"><span class="menu__helper">In the News</span></a></li>
+							<!--<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>-->
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+<!-- 	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft" data-wow-delay="-1s"><a href="index.html">Home</a> / <span>In the News</span></h2>
+		</div>
+	</div> -->
+<!-- //banner -->
+<!-- Template 3 -->
+<div class="about">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">CS 257: Software Design (Fall 2024)</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">This syllabus is based on materials from Profs. Anya E. Vostinar, Amy Csizmar Dalal, &amp Jeff Ondich.</p>
+        <div class="about-grids">
+            <div class="col-md-12 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	                        	<h2> Table of Contents </h2>
+	                        	<ol>
+	                        		<li><a href="#personnel_materials"> Course Personnel &amp Materials </a> </li>
+	                        		<li><a href="#overview"> Overview </a></li>
+	                        		<li><a href="#learning_goals"> Learning Goals </a></li>
+	                        		<li><a href="#admin"> Course Administration </a></li>
+	                        		<li><a href="#expectations"> Expectations </li>
+	                        		<li><a href="#help"> Getting Help </a></li>
+	                        		<li><a href="#assessment">Assessment</a></li>
+	                        		<li><a href="#honesty">Doing Honest Work</a></li>
+	                        	</ol>
+
+	                        	<h2 id = "personnel_materials"> Course Personnel &amp Materials </h2>
+	                        	<br>
+	                        		<p>
+	                        			<b>Instructor:</b> Jean Salac (she/her)
+	                        			<br>
+	                        			<br>
+	                        			<b>Classroom:</b> Weitz Center 235
+	                        			<br>
+	                        			<br>
+	                        			<b>Time:</b> 2a (Mondays &amp Wednesdays 9:50-11am; Fridays 9:40-10:40am)
+	                        			<br>
+	                        			<br>
+	                        			<b> Course Staff:</b> TBD
+	                        			<br>
+	                        			<br>
+	                        		</p>
+	                        		<p>
+	                        			<b> Required Course Materials: </b>
+	                        			<ul>
+	                        				<li><i>Don't Make Me Think! Revisited,</i> Steve Krug</li>
+	                        				<li><i>Clean Code,</i> Robert C. Martin. Free <a href= "https://bridge.primo.exlibrisgroup.com/permalink/01BRC_INST/11mmqid/cdi_askewsholts_vlebooks_9780134494326"> online access </a> available through Carleton library. </li> 
+	                        				<li>Additional readings linked through Moodle</li>
+	                        			</ul>
+	                        		</p>
+	                        		<p>
+	                        			I recognize the potential financial burden of additional course materials. If you need assistance to cover course expenses, please reach out to me by Friday of Week 1.
+	                        			<br>
+	                        			<br>
+	                        			<b>Student Help Hours (Olin 339):</b>
+	                        			<ul>
+	                        				<li>Mondays 3:30-5pm</li>
+	                        				<li>Thursdays 2-3:30pm</li>
+	                        				<li><a href="https://calendar.app.google/7cfpgECbWgXVxGLB8">By Appointment</a></li>
+	                        			</ul>
+	                        		</p>
+	                        	<br>
+	                        	<br>
+	                        	<h2 id = "overview"> Overview </h2>
+	                        	<br>
+	                        	<p>
+	                        	By now, you’ve taken at least a couple of computer science courses. You know how to program. You might know how to program pretty well. But mostly, you’ve done small-ish projects with clear guidelines and clear outcomes. You may wonder, how close is your experience so far to that of those who develop software — to “real world” programming? What do you need to know about how to write software in the real world to be a successful and independent programmer? Further, what do you need to know about how to be ethical in developing software and working with a team and clients?
+	                        	<br>
+	                        	<br>
+								This course is an introduction to the key concepts of software design, which we’ll loosely define as the art and science of effective and ethical software planning, construction, development, and maintenance. In this class, we’ll focus on the tools, skills, and ideas that good software developers should use in their day-to-day work. The concepts we’ll cover, practice, and discuss will be useful for programs, projects, and teams of any size.
+								</p>
+								<br>
+	                        	<br>
+
+	                        	<h2 id = "learning_goals"> Learning Goals </h2>
+	                        	<br>
+	                        	<p>
+	                        	There are five high-level learning goals in this course:
+	                        	</p>
+	                        	<ol>
+	                        		<li>Work effectively in stable <b>teams</b> over the course of the term.</li>
+	                        		<li>Create a <b>database-driven website</b> that successfully meets the goals of a specified audience.</li>
+	                        		<li>Create code that is <b>well-written, modular, well-documented, maintainable</b>, and follows acceptable best practices.</li>
+	                        		<li>Successfully select and utilize <b>appropriate tools, languages, and methodologies</b> to complete the database-driven web site project.</li>
+	                        		<li> Analyze &amp apply <b>ethical reasoning</b> to the software development process.</li>
+	                        	</ol>
+	                        	<h2 id = "admin"> Course Administration </h2>
+	                        	<br>
+	                        	<p>
+	                        		<b>Moodle:</b> All course related materials, assignments, projects, readings, and resources will be posted here.
+	                        		<br>
+									<br>
+
+									<b>CampusWire:</b> All course announcements and changes to assignments, projects, and readings will be posted here. We’ll also use CampusWire for some pre-class discussions about the readings. I highly encourage you to ask and answer questions (e.g. clarifications, bugs, error messages, etc) posted by your peers to foster a community of learning.
+									<br>
+									<br>
+
+									<b>GitHub Classroom:</b> All starter code for assignments will be distributed here, and your project repositories are hosted here. You will turn in most of your projects on GitHub.
+									<br>
+									<br>
+
+									<b>Languages:</b> Python, HTML, CSS, SQL, and Javascript.
+									<br>
+									<br>
+
+									<b>IDE:</b> VSCode. You should download VSCode to your personal machine. We’ll also be doing a fair amount of work in text editors and the terminal.
+									<br>
+									<br>
+									
+									<b>Default environment:</b> I will default to Mac OSX in class, for development.
+									<br>
+									<br>
+
+									I am committed to the principle of universal learning. This means that our physical and virtual spaces, our practices, and our interactions should be as inclusive as possible. <b>Mutual respect, civility, and the ability to listen and observe others carefully are crucial to universal learning.</b>
+									<br>
+									
+									I strive to create an inclusive and respectful classroom that values diversity. Our individual differences enrich and enhance our understanding of one another and of the world around us. This class welcomes the perspectives of all ethnicities, genders, religions, ages, sexual orientations, disabilities, socioeconomic backgrounds, regions, and nationalities.
+	                        	</p>
+	                        	<br>
+								<br>
+	                        	
+	                        	<h2 id = "expectations"> Expectations </h2>
+	                        	<br>
+	                        	<p>
+	                        	<b>Attendance:</b> Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session. Because much of the classtime is spent working with your team, if you miss class, you will miss out on that opportunity. 
+	                        	<br>
+	                        	<br>
+
+	                        	<b> Communication:</b> I expect you to check Moodle and CampusWire every day for updates on activities and assignments. All out of class written communication will happen via the class announcement forum. Please make sure you are checking it regularly and/or have email or push notifications setup. Each class day will have preparation activities for you to complete and a section on Moodle to guide you through what you should do before class. All materials will be released at least 48 hours before they are due.
+	                        	<br>
+	                        	<br>
+
+	                        	<b>Technical Issues:</b> If you experience significant technological problems that limit your ability to participate, please contact the ITS Helpdesk at 507-222-5999 or helpdesk@carleton.edu. For announcements of known technical issues, visit the Helpdesk portal.
+	                        	<br>
+	                        	<br>
+
+	                        	<b>Extenuating Circumstances:</b> If your personal situation (due to COVID-19 illness or other circumstances) begins to impact your ability to engage with the course, please let me know and contact the Dean of Students Office.
+	                        	</p>
+	                        	<br>
+	                        	<br>
+
+	                        	<h2 id = "help"> Getting Help </h2>
+	                        	<br>
+	                        	<p>
+                        		<b>Student Help Hours:</b> Student help hours are a great time to clear up any lingering confusion you may have about certain concepts, ask about the daily readings and essay assignments, work through ideas, or just talk about something in the course or in computer science generally or in life that’s piqued your interest. These time slots are for you, so use them! If for whatever reason you cannot make it to office hours, feel free to make an appointment to see me (info at the top of this page).
+                        		<br>
+	                        	<br>
+
+                        		<b>Accommodations for Students with Disabilities:</b> Carleton College is committed to providing equitable access to learning opportunities for all students. The Office of Accessibility Resources (Henry House, 107 Union Street) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact OAR@carleton.edu or call Sam Thayer (’10), Director of the Office of Accessibility Resources (x4464), to arrange a confidential discussion regarding equitable access and reasonable accommodations.
+                        		<br>
+	                        	<br>
+
+                        		<b>Assistive Technologies:</b> The Assistive Technologies program brings together academic and technological resources to complement student classroom and computing needs, particularly in support of students with physical or learning disabilities. Accessibility features include text-to-speech (Kurzweil), speech-to-text (Dragon) software, and audio recording Smartpens. If you would like to know more, contact aztechs@carleton.edu or visit <a href="go.carleton.edu/aztech">go.carleton.edu/aztech</a>.
+	                        	</p>
+	                        	<br>
+	                        	<br>
+	                        	
+	                        	<h2 id = "assessment"> Assessment </h2>
+	                        	<br>
+	                        	<p>
+	                        	One of my goals for you in this course is for you to continue to develop as an independent programmer and learner. I’m much more interested in what skills and understanding you have mastered by the end of the course than the exact pace at which you master them. However, it isn’t healthy for you or me if you leave everything to the last minute. It also isn’t fair to your team if you haven’t prepared as much as they have. Therefore, my goal with the following evaluation metrics is to balance providing you flexibility to learn at your own pace while also making sure to spread your learning out over the entire term.
+	                        	<br>
+	                        	<br>
+	                        	Towards that end, your performance in this class will be evaluated in two different ways according to the learning goals for the course:
+	                        	</p>
+	                        	
+	                        	<ul>
+	                        		<li><b>Group Deliverables:</b> This course consists of a team project that lasts the majority of the course and has components that you will create and get feedback on along the way. Your work will be evaluated on the effectiveness of the process you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team’s collaboration. This contributes to your final grade according to the <i>specifications grading</i> scale outlined below.</li>
+	                        		<li><b>Individual Deliverables:</b> Many of the team project deliverables will also have an associated individual portion. The individual deliverables allow you to demonstrate individual mastery of the key learning objectives in this course – which will provide you with more targeted feedback on your performance. These may be programs or written reflections, depending on the learning goal. This contributes to your final grade according to the <i>specifications grading</i> scale outlined below.</li>
+	                        	</ul>
+	                        	<br>
+
+	                        	<b>Specifications Grading Scale</b>
+	                        	<br>
+	                        	<p>
+	                        		Each assessment that you turn in will be evaluated against a checklist of specifications related to one or more of the course learning objectives. I will distribute the checklists I’ll use to assess each assignment so that you know exactly what constitutes each of these levels. I will rank each learning objective, and the overall submission, according to a four-level scale:
+	                        	</p>
+	                        	<ol>
+	                        		<li><b>Insufficient Evidence:</b> The assignment was not turned in or does not engage with the prompt in the intended manner.</li>
+	                        		<li><b>Developing:</b> The assignment demonstrates progress towards the learning objective(s), but needs further work and engagement to reach proficiency.</li>
+	                        		<li><b> Proficient:</b> The assignment demonstrates achievement of the learning objective(s).</li>
+	                        		<li><b>Exemplary:</b> The assignment demonstrates achievement of the learning objective(s) at a higher level (e.g. more nuance, sophistication, etc).</li>
+	                        	</ol>
+
+	                        	<b>Revisions</b>
+	                        	<br>
+	                        	<p>
+	                        		<b>You may revise any group or individual deliverable except for anything due on the last day of classes or finals.</b> Learning is not a linear process, and learning involves making mistakes and learning from them. <b>You may revise and resubmit each deliverable ONCE, within a week after its grades have been released or with the next deliverable.</b>
+	                        	</p>
+	                        	<ul>
+	                        		<li>Revisions are due a week after you receive a grade for an assignment.</li>
+	                        		<li>You can revise team deliverables, individual deliverables, or reflection assignments.</li>
+	                        		<li>Your revised grade will completely replace your original grade as long as it's higher. If for whatever reason your revision results in a lower grade, I'll keep the original grade.</li>
+	                        		<li>Along with your revision, you need to submit a Google Form asking you some questions about what you chose to revise, how you responded to feedback, how the revisions improve the deliverable, etc.</li>
+	                        		<li>If the deliverable you want to revise is a team deliverable, you may choose to combine your revision with the next team deliverable, given that the pieces of the project build upon each other. You will still need to explicitly indicate how the new submission addresses the feedback in the earlier submission, and you will still need to fill out the Google Form.</li>
+	                        		<li><b>You cannot revise the final reflection and the final project deliverable.</b> These are due at the end of the term and there is not enough time to revise before grades are due.</li>
+	                        	</ul>
+	                        	<br>
+
+	                        	<b>Late Work &amp Extensions</b>
+	                        	<p>
+	                        		In this course, we need to balance flexibility for individuals with structure for teams and the class as a whole. I also want to help you avoid procrastinating to the point that you can’t get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work.
+	                        		<br>
+	                        		<br>
+	                        		<b>All deliverables</b> have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn’t complete, so that you can benefit from feedback and revision.
+	                        		<br>
+	                        		<br>
+	                        		<b>Preparation work</b> does not specifically contribute to your grade, and so a late work or extension policy doesn’t make sense for it. It is expected that you complete the preparation work ahead of the class period that it is associated with, however if you aren’t able to, I recommend you complete it as soon afterward as you can.
+	                        		<br>
+	                        		<br>
+	                        		If you’re staring down a deadline that you know you can’t meet, or if you’ve fallen behind, <b>get in touch with me immediately and we’ll make arrangements.</b> While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
+	                        	</p>
+	                        	<br>
+
+	                        	<b>How Specifications Grading Translates to Course Grades</b>
+	                        	<ol>
+	                        		<li> <b>To earn a C:</b> You must have 50% of deliverables at "Proficient".</li>
+	                        		<li><b>To earn a B:</b>You must have 100% of deliverables at "Proficient".</li>
+									<li><b>To earn an A:</b>You must have at least 90% of deliverables at "Exemplary" and the remaining 10% at "Proficient".</li>
+									<li>If you are between letter grades, +/- grades will be awarded based on which letter grade you are closer to (i.e. if you're closer to an A than a B, you get an A-; if you're closer to a B, you get a B+). </li>
+	                        	</ol>
+	                        	
+	                        	<h2 id = "honesty"> Doing Honest Work </h2>
+								<br>
+								<b>AI-Assistance</b>
+								<p>
+									Only use an AI text generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to develop the skills to both comprehend &amp write code independently. If you already have the GitHub Co-pilot extension in VSCode, you must <a href = "https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot">disable</a> it for all course work.
+								</p>
+								<br>
+								<br>
+								<b>Teams</b>
+								<p>
+									Computer Science is a collaborative discipline, &amp people who apply computer science concepts and skills both shape and are shaped by social, political, &amp cultural environments beyond themselves. You are encouraged to collaborate with your classmates to learn, but collaboration comes with additional repsonsibilities:
+								</p>
+								<ul>
+									<li><b>As a member of a team, it is your responsibility to contribute equally and fully to the final product.</b> For example, it is not acceptable to let a teammate “finish the project” without you and put your name on it before submitting it, or work on significant portions of the project without you, or any permutation of this. When pair programming, I expect you to actively work side-by-side with your partner the majority of the time.</li>
+
+									<li><b>As a member of a team, it is your responsibility to be able to explain and/or reproduce your solution individually, if asked.</b> If you do not understand the solution, then you did not contribute fully to the project, and this will hinder your learning of the course material.</li>
+
+									<li><b>Whether you are working in a team or individually, it is your responsibility to follow the written and stated guidelines for any particular project.</b> This includes guidelines from both me (e.g. tools and resources you can use) and your teammates (e.g. when to show up for team meetings).</li>
+
+									<li><b> When you put your name on an assignment or project, it is a contract between you, your teammates (if applicable), and me that this work represents your own work and not the work of someone else.</b> It is never acceptable to turn in a program, or a problem solution, that you have found anywhere (on the Internet, in your textbook or another book, from a friend who took this course before) or commissioned as your own. Making cosmetic changes to someone else’s program or solution (such as changing the variable names or comments) is also not acceptable.</li>
+									<li><b>Whether you are working in a team or individually, it is your responsibility to credit any assistance you receive.</b> If you receive assistance from anyone (another book, a lab assistant, a classmate, me), you must properly credit your source. If a piece of your program utilizes outside assistance, you might include the following in your program’s comments:</li>
+								</ul>
+								<code>
+								# Method to decide how much financial aid students should receive
+								<br>
+								# I used this StackOverflow post to refresh on the syntax for writing conditional statements in Python: https://stackoverflow.com/link-to-post
+								</code>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/3.jpg" alt=" " class="img-responsive" />
+            </div> -->
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<!-- //about -->
+<!-- footer -->
+<div class="footer"><a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: salac (at) carleton (dot) edu</p>
+                    <p>Twitter: <a href="https://twitter.com/SaladwithaC">@SaladwithaC</a></p>
+                    <p><a href="https://www.linkedin.com/in/jeansalac/">LinkedIn</a></p>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                </div>
+                <div class="clearfix"> </div>
+			</div>
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+                    <ul>
+						<li class="active"><a href="../../index.html">Home</a></li>
+						<li><a href="../../research.html">Research</a></li>
+						<li><a href="../../teaching.html">Teaching</a></li>
+						<li><a href="../../impact.html">Impact</a></li>
+						<li><a href="../../media.html">In the News</a></li>
+						<!--<li><a href="#CONTACT">Contact</a></li>-->
+					</ul>
+				</div>
+				<div class="footer-grids1-right">
+					<p class="animated wow slideInRight" data-wow-delay="0s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="../../js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
