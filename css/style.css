@@ -34,7 +34,7 @@ ol,label{
 code {
 	font-family: Consolas,"courier new";
 	color: darkblue;
-	background-color: #645d5d;
+	background-color: rgb(240, 238, 238);
 	padding: 2px;
 	font-size: 100%;
   }
