@@ -3,61 +3,42 @@
 // Ported to Kotlin by Dave Musicant
 // Adapted for in-class lab by Jean Salac
 
-class BinarySearchTree {
+data class Node(var item: Int,
+                var left: Node? = null,
+                var right: Node? = null)
 
-    data class Node(var item: Int,
-                    var left: Node? = null,
-                    var right: Node? = null)
+class BinaryTree {
 
+    // Root of Binary Tree
     var root: Node? = null
 
-    fun insert(item: Int) {
-        root = insertItem(root, item)
-    }
-
-    // Insert item in the tree
-    private fun insertItem(root: Node?, item: Int): Node? {
-        // Return a new node if the tree is empty
-        if (root == null) {
-            return Node(item)
-        }
-
-        // Traverse to the right place and insert the node
-        if (item < root.item) {
-            root.left = insertItem(root.left, item)
-        } else if (item > root.item) {
-            root.right = insertItem(root.right, item)
-        }
-
-        return root
-    }
-
     // Print Preorder Traversal
-    fun preorder(root: Node?) {
-
+    fun preorder(node: Node?) {
+        
     }
 
     // Print Inorder Traversal
-    fun inorder(root: Node?){
+    fun inorder(node: Node?) {
        
     }
 
     // Print Postorder Traversal
-    fun postorder(root: Node?) {
+    fun postorder(node: Node?) {
         
     }
+
 }
 
 // Driver Program to test above functions
 fun main() {
-    val tree = BinarySearchTree()
+    val tree = BinaryTree()
 
     // Tree Setup
-    tree.insert(9)
-    tree.insert(4)
-    tree.insert(11)
-    tree.insert(2)
-    tree.insert(7)
+    tree.root = Node(9)
+    tree.root!!.left = Node(4)
+    tree.root!!.right = Node(11)
+    tree.root!!.left!!.left = Node(2)
+    tree.root!!.left!!.right = Node(7)
 
     // Testing Preorder Traversal
     print("Preorder traversal: ")
