@@ -64,8 +64,10 @@ class MaxHeap: Heap {
 // Implement Min-Heap based on Max-Heap code above
 
 fun main() {
-    // Min-Heap from Prep
+    // List representation of Min-Heap from Prep
     val list = listOf(4, 23, 12, 35, 36, 35, 14, 39, 42)
+
+    // Initalize a Min-Heap object
 
     // Insert 11 into the Min-Heap and print out the list
 
