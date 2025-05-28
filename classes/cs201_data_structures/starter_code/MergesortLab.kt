@@ -1,3 +1,5 @@
+// Adapted from Dave Musicant's in-class lab by Jean Salac
+
 // Kick it all off
 fun <T: Comparable<T>> mergesort(list: MutableList<T>) {
 
