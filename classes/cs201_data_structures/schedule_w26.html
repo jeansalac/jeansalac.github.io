@@ -1,0 +1,644 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS 201: Data Structures Winter 2026</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jean Salac, CS Education" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- animation-effect -->
+<link href="../css/animate.min.css" rel="stylesheet"> 
+<script src="../js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../../js/move-top.js"></script>
+<script type="text/javascript" src="../../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="../../index.html">Jean Salac</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="../../index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item"><a href="../../research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item menu__item"><a href="../../teaching.html" class="menu__link"><span class="menu__helper">Teaching</span></a></li>
+							<li class="menu__item"><a href="../../impact.html" class="menu__link"><span class="menu__helper">Impact</span></a></li>
+							<li class="menu__item"><a href="../../media.html" class="menu__link"><span class="menu__helper">In the News</span></a></li>
+							<!--<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>-->
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+<!-- 	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft" data-wow-delay="-1s"><a href="index.html">Home</a> / <span>In the News</span></h2>
+		</div>
+	</div> -->
+<!-- //banner -->
+<!-- Template 3 -->
+<div class="about">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">CS 201: Data Structures Schedule (Winter 2026)</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Adapted from materials by Profs. Dave Musicant and Anya Vostinar</p>
+        <div class="about-grids">
+            <div class="col-md-12 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<h2>Important Notes</h2>
+							<br>
+							<ul>
+								<li>You can find a lot of important information, such as <b>student drop-in hours (aka office hours) and course grade determination</b>, on the <a href="../cs201_data_structures/syllabus_sp25.html">syllabus.</a></li>
+								<li><b>Class topics and homework information may change over the course of the term.</b> Please treat this schedule as a rough guide for what we'll be focusing on and expect changes as the term progresses.</li>
+								<li><b>Before Class:</b> Complete the readings and/or preparation activities. Class is structured expecting that you have completed these tasks.</li>
+								<li><b>Restricted Access:</b> Most of the links will require a Carleton login to view. If you're external to Carleton and want access, just shoot me an email.</li>
+								<li><b>Revisions:</b> If you are submitting a revision for a deliverable, submit <a href="https://docs.google.com/forms/d/e/1FAIpQLScbSryjVzRcFFbIDfPr1ayKaQ1DRzE_o8YSiZtojXCMTj952Q/viewform?usp=dialog">this form</a> to let me and the course staff know where to look for changes.</li>
+							</ul>
+							<br>
+	                        <table style="width:100%">
+								<tr>
+									<th>Date</th>
+									<th>Assignments Due</th>
+									<th>In-Class Activities</th>
+									<th>Assignments Released</th>
+								</tr>
+								<!-- //Week 1 -->
+								<tr>
+									<td><b>Week 1</b></td>
+									<td>
+										<b>Intro to Kotlin</b>
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1rptWark8CH5xSfvk8lknsp4GAahSERE5UUm08POenwU/edit?usp=sharing">Intro to Data Structures Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1hlaZuwG92yfZlLwU3mPxm_gSt1UoCSv2/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1n4f_Bs1_QsfH49bcgouAddkT7pPIviV-p3WHT9wabqM/edit?usp=sharing">Software Install Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1HNI7BV9DqtFqCy4V5gfvC15V0aly8ijEjSQrlwU_xtY/edit?usp=sharing">Kotlin Basics Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1cUxsbBYJ9-Vl-OWjqP3MF1Ct16huEPcn/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/kotlinBasicsLab.kt">Kotlin Basics Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1pDeR04MaAPagMm2w9qP06g_T950ylb7gySlG7ov_GwU/edit?usp=sharing">Classes and Null Safety Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/13GS5H3uS91Q-8N1_AnPUItu_bLsy01eM/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/BankAccountLab.kt">Classes Lab</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1DnOKg6G_NGC9XCQUXvdkFYFpXM9vDF09E-gSIIbIIyU/edit?usp=sharing">Deliverable: Lunar Lander</a>
+									</td>
+								</tr>
+								<!-- //Week 2 -->
+								<tr>
+									<td><b>Week 2</b></td>
+									<td>
+										<b>OOP, Runtime, and Real-World Analyses</b>
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1a_gA-9-bbWFt5mrUBGmAPUn6DHumgCApu3sPAwpOtSk/edit?usp=sharing">Constructors Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1R6ChDbvPgwkyHbw8V-4IBIPjNHPyHTQh/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1-b4wAFtdTB1t6j-OIV-3Auiw4wBAV3qRasIeLnbCdzs/edit?usp=sharing">Inheritance and Interfaces Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1DnOKg6G_NGC9XCQUXvdkFYFpXM9vDF09E-gSIIbIIyU/edit?usp=sharing">Deliverable: Lunar Lander Part 1 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1PtBc7g_febJM3cMxVPtbxtQBHN525qnI/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1CF3q-KbL6pEzM6WUK5UGPtFPIpDLj4VzjezWQ8y0cwY/edit?usp=sharing">Runtime and Real-World Analyses Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1DnOKg6G_NGC9XCQUXvdkFYFpXM9vDF09E-gSIIbIIyU/edit?usp=sharing">Deliverable: Lunar Lander Part 2 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1jiJxw39Q9-V5M6Ip1fqkk4NhbGQtTgO1/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1-lVbjOVFvjxRXJKaNin0jEiyAqevxthdpm1xnqq7Rgk/edit?usp=sharing">Run-Time Analysis Lab</a>
+									</td>
+									<td>
+										<a href="https://drive.google.com/file/d/1Uj0xc9JZHcRIPkEdEsLIf4BVQ19gIxp-/view?usp=sharing">Deliverable: Runtime and Real-World Analyses</a>
+									</td>
+								</tr>
+								<!-- //Week 3-->
+								<tr>
+									<td><b>Week 3</b></td>
+									<td><b>Stacks</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1-Sqr3EYiGaHycyJv_QaXY3rJu0Jwj1LIAKD7J9n44DE/edit?usp=sharing">Stacks Prep</a>
+										<br>
+										<a href="https://drive.google.com/file/d/1Uj0xc9JZHcRIPkEdEsLIf4BVQ19gIxp-/view?usp=sharing">Deliverable: Runtime and Real-World Analyses due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1g09P-CtZ2vuq93nXHpg3-NhPbxp3EGzq/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/14Zdg3z7PvVxAL71ZzkRigD3la2xXt-_ObikK_rIeuso/edit?usp=sharing">Deliverable: Maze Solver</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1TB9RfxQ0gKMab_ur0whvThhWTwuW6JEDgvmk8FZbz0M/edit?usp=sharing">Backtracking with Stacks Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1mGMwyQU4SWPMmsjgEnXcirdRg6JmHQHm/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1K7XnwW-dA_P-jAK1L8EaGReqJiRPucmedBcvRrF2vKY/edit?usp=sharing">Maze Solving Lab</a>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<b>Exam 1</b>
+										<br>
+										Topics: Kotlin, OOP, Run-Time and Real-World Analyses
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<!-- //Week 4 -->
+								<tr>
+									<td><b>Week 4</b></td>
+									<td><b>Linked Lists and Queues</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1sUxwFL9QuAszlfHd4CM2AhMok8Z9iOzDw5ueL8ASwks/edit?usp=sharing">Linked Lists Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/14Zdg3z7PvVxAL71ZzkRigD3la2xXt-_ObikK_rIeuso/edit?usp=sharing">Deliverable: Maze Solver Part 1 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1p8Vbe5adMP6VAFA6XPH-ra69gO-O_PP0/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1QEv6wRflAV7CMRblh1Hi2QuIOODh1NqCHGr5QtoEEmc/edit?usp=sharing">Deliverable: Card Operations</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/10Ux4suipEO4cLcdOJKw1yvE2-LZ-7KR_LVTS6Cc1-7s/edit?usp=sharing">Queues Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1RSegGFYZnWOnxEw9kwR8YIENAit4u0I8/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1sC0Y7iryt1GFybipyB5MTfat_QIDGsatEXWqflHw5ms/edit?usp=sharing">Doubly-linked Lists and Deques Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/14Zdg3z7PvVxAL71ZzkRigD3la2xXt-_ObikK_rIeuso/edit?usp=sharing">Deliverable: Maze Solver Part 2 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1vfaudFSHv8exV4NbdhHOA2GUNrEFP-2r/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td></td>
+								</tr>
+								<!-- //Week 5 -->
+								<tr>
+									<td><b>Week 5</b></td>
+									<td><b>Hashing</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1O9Bd1wjpwgI7A3IBbXS7HU0IpQ8v7VUF-eyG5mBm71M/edit?usp=sharing">Hashing and Hash Tables Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1QEv6wRflAV7CMRblh1Hi2QuIOODh1NqCHGr5QtoEEmc/edit?usp=sharing">Deliverable: Card Operations Part 1 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1_TcM1N71e74FZNkhiTzCKBlaOTSqkv8F/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1Qtv2zWVia4uJ003hdDGa3DunBmWYV1D8rR233kJzZH0/edit?usp=sharing">Open Addressing and Rehashing Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1PmxD2ue6B_Eb1_QChogOSl2S-ipFsuZn/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1CDXxijx6vEBu5DgKoYajNy-bP4cSAV0077pBzYyCdBg/edit?usp=sharing">Deliverable: Cuckoo Hashing</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<b>Exam 2</b>
+										<br>
+										Topics: Stacks, Linked Lists, and Queues
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<!-- //Week 6 -->
+								<tr>
+									<td><b>Week 6</b></td>
+									<td><b>Recursion</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td><b>Mid-Term Break!</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1rRZA4Q3oH0pHMFeG5K70AMIiYXbxdKGNohIFcdQY8CI/edit?usp=sharing">Recursion Review Prep</a>
+										
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1uU-Pzg8qNsyvFj7yKU6cj1mMSF61xhit/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/recursionLab.kt">Recursion Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1Q1rgftViJf7F8LV8kBn98B7-NcEF7z8VUgIFWYsK2Ds/edit?usp=sharing">Analyzing Recursion Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1QEv6wRflAV7CMRblh1Hi2QuIOODh1NqCHGr5QtoEEmc/edit?usp=sharing">Deliverable: Card Operations Part 2 Due 10pm</a>
+										
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1wpZa7Mz3MQ4WjsZrj2WgGAeI-hLg35R9/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/recursionAnalysis.kt">Analyzing Recursion Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<!-- //Week 7 -->
+								<tr>
+									<td><b>Week 7</b></td>
+									<td><b>Trees</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/10SmAODbng37z-a4BggaKEFXbi5oMHmLDF8jdU7vmdRc/edit?usp=sharing">Trees Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1CDXxijx6vEBu5DgKoYajNy-bP4cSAV0077pBzYyCdBg/edit?usp=sharing">Deliverable: Cuckoo Hashing Part 1 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1GFC8cPU1LXybOP_FVttCDcjz1P4IBngI/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/treeTraversalLab.kt">Tree Traversal Lab</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1Ow4BvfoAJhGul3z74kXJCNwqpo6rPHGLiiKSBBvzvnc/edit?usp=sharing"> Deliverable: Word Counter</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1uPvRxi8fL2gkIMHOqlvA_Hc2KbU4uQY2AOVy_JF0MZE/edit?usp=sharing">Binary Search Trees Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1rtzk-ovPO7o9hI1FCvWgAKOdKb7wHX6J/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1OER_LrMoV8zWgT6mhvR6ZwyBL_U8EhImxEpW0eqsBjI/edit?usp=sharing">BST Operations Lab</a>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<b>Exam 3</b>
+										<br>
+										Topics: Hashing and Recursion
+										<br>
+										Option to Revise Exams 1-2
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<!-- //Week 8 -->
+								<tr>
+									<td><b>Week 8</b></td>
+									<td><b>More Trees, Heaps and Priority Queues</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1rQtno8jkJeeD6LHIKs7k0zPtYrgPt2QdAoQIdIBPdqI/edit?usp=sharing">Prefix Trees Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1CDXxijx6vEBu5DgKoYajNy-bP4cSAV0077pBzYyCdBg/edit?usp=sharing">Deliverable: Cuckoo Hashing Part 2 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1kgpeM0bImzgzYJGvaCrX57Hl_IXKsPie/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/PrefixTreeLab.kt">Prefix Tree Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1M60T5aeTHDtCCjK5OKj7YD_TdTAwHjcv9aJgxKAir8I/edit?usp=sharing">Heaps and Priority Queues Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1cnuL01Tc9Ggk0eUGSmvXmvZJnn2CXrxX/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/HeapLab.kt">Heaps and PQs Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1If7aH8ukED0TNsIeVKY5V1u3KdOChGBxo9FM4Dxg824/edit?usp=sharing">AVL Trees Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1Ow4BvfoAJhGul3z74kXJCNwqpo6rPHGLiiKSBBvzvnc/edit?usp=sharing">Deliverable: Word Counter Part 1 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1uoJTS4ZLTenpcVm6U94rx2bhM6zWEFWw/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+									</td>
+									<td></td>
+								</tr>
+								<!-- //Week 9 -->
+								<tr>
+									<td><b>Week 9</b></td>
+									<td><b>Graphs and Sorting</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1geAKSIARv8fkiZEP5laA2a4aNDaXbJkB7Wy5MTZfxU0/edit?usp=sharing">Graphs Prep</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1Ow4BvfoAJhGul3z74kXJCNwqpo6rPHGLiiKSBBvzvnc/edit?usp=sharing">Deliverable: Word Counter Part 2 Due 10pm</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1TVNJLOfes5laLrSN2t_TY0K8JlBUbeh4/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/GraphsLab.kt">Graphs Lab</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1XcYRjMmk-VITrR8YvmDHidht1zk0H3e4V4brv1BVTjg/edit?usp=sharing">Deliverable: IMDB Graph</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1ByD9pRcok5Z0YbWeWSRECYs3tEQA-raa5myfJrSaIGk/edit?usp=sharing">Graph Search Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1dREbKrWthAhfz1-s_0OJTKUAgmBAJU4J/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1e7vtyMb6fg-qi5oeL0YY2Aid8sXhmjVDp0QRragTyiY/edit?usp=sharing">DFS and BFS Lab</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/GraphSearchLab.kt">Graph Search Lab</a>
+									</td>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<td>Fri</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1cNg5-9leIVA_jSxC4xzH8Mt5WJ09YZcREHKLvAUYtbU/edit?usp=sharing">Mergesort Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1SnkFOjkhMfocGFs11mSFvaeBO_aZr-Ms/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/MergesortLab.kt">Mergesort Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<!-- //Week 10 -->
+								<tr>
+									<td><b>Week 10</b></td>
+									<td><b>Course Review</b></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Mon</td>
+									<td>
+										<a href="https://docs.google.com/document/d/1Zvfdj_GJixQxRs0llHhanLtBZL00K04Gd3NPH_2RZ3I/edit?usp=sharing">Quicksort and Heapsort Prep</a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1yd9mPwdcETh01WCT3sKTYT5H5_pE-pO4/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="https://docs.google.com/document/d/1gdwszF0zOVCUnmbOck1K6qRN8D4e7rba0CR-symHUT0/edit?usp=sharing">Tracing Lab</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/QuicksortLab.kt">Quicksort Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Wed</td>
+									<td>
+										No Prep!
+										<br>
+										<a href="https://docs.google.com/document/d/1XcYRjMmk-VITrR8YvmDHidht1zk0H3e4V4brv1BVTjg/edit?usp=sharing">Deliverable: IMDB Graph Due <b>11am</b></a>
+									</td>
+									<td>
+										<a href="https://docs.google.com/presentation/d/1eErJxZ6ZSRpBT6CZr115v1syxtJRt7S3/edit?usp=sharing&ouid=109920793504542961968&rtpof=true&sd=true">Slides</a>
+										<br>
+										<a href="/classes/cs201_data_structures/starter_code/HeapReviewLab.kt">Heap Review Lab</a>
+									</td>
+									<td></td>
+								</tr>
+								<!-- //Exam Week -->
+								<tr>
+									<td>
+										<b>Mon 6/9
+											<br>
+											8:30-11am</b>
+									</td>
+									<td>
+										<b>Exam 4</b>
+										<br>
+										Topics: Trees, Heaps and Priority Queues, Sorting, and Graphs
+										<br>
+										Option to Revise Exams 1-3
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/3.jpg" alt=" " class="img-responsive" />
+            </div> -->
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<!-- //about -->
+<!-- footer -->
+<div class="footer"><a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: salac (at) carleton (dot) edu</p>
+                    <p><a href="https://www.linkedin.com/in/jeansalac/">LinkedIn</a></p>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                </div>
+                <div class="clearfix"> </div>
+			</div>
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+                    <ul>
+						<li class="active"><a href="../../index.html">Home</a></li>
+						<li><a href="../../research.html">Research</a></li>
+						<li><a href="../../teaching.html">Teaching</a></li>
+						<li><a href="../../impact.html">Impact</a></li>
+						<li><a href="../../media.html">In the News</a></li>
+						<!--<li><a href="#CONTACT">Contact</a></li>-->
+					</ul>
+				</div>
+				<div class="footer-grids1-right">
+					<p class="animated wow slideInRight" data-wow-delay="0s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="../../js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
