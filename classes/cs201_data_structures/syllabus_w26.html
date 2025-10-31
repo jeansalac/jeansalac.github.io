@@ -1,0 +1,464 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS 201: Data Structures Syllabus Winter 2026</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jean Salac, CS Education" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- animation-effect -->
+<link href="../../css/animate.min.css" rel="stylesheet"> 
+<script src="../../js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="../../js/move-top.js"></script>
+<script type="text/javascript" src="../../js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="../../index.html">Jean Salac</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="../../index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item"><a href="../../research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item menu__item"><a href="../../teaching.html" class="menu__link"><span class="menu__helper">Teaching</span></a></li>
+							<li class="menu__item"><a href="../../impact.html" class="menu__link"><span class="menu__helper">Impact</span></a></li>
+							<li class="menu__item"><a href="../../media.html" class="menu__link"><span class="menu__helper">In the News</span></a></li>
+							<!--<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>-->
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+<!-- //header -->
+<!-- banner -->
+<!-- 	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft" data-wow-delay="-1s"><a href="index.html">Home</a> / <span>In the News</span></h2>
+		</div>
+	</div> -->
+<!-- //banner -->
+<!-- Template 3 -->
+<div class="about">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">CS 201: Data Structures Syllabus (Winter 2026)</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Adapted from Materials by Profs. Dave Musicant, Anna Rafferty, and Anya Vostinar.</p>
+        <div class="about-grids">
+            <div class="col-md-12 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	                        	<h2> Table of Contents </h2>
+	                        	<ol>
+	                        		<li><a href="#personnel_materials"> Course Personnel &amp Materials </a> </li>
+	                        		<li><a href="#overview"> Overview </a></li>
+	                        		<li><a href="#learning_goals"> Learning Goals </a></li>
+	                        		<li><a href="#admin"> Course Administration </a></li>
+	                        		<li><a href="#expectations"> Expectations </li>
+	                        		<li><a href="#help"> Getting Help </a></li>
+	                        		<li><a href="#evaluation">Evaluation</a></li>
+	                        		<li><a href="#honesty">Doing Honest Work</a></li>
+	                        	</ol>
+
+	                        	<h2 id = "personnel_materials"> Course Personnel &amp Materials </h2>
+	                        	<br>
+	                        		<p>
+	                        			<b>Instructor:</b> Jean Salac (she/her)
+	                        			<br>
+	                        			<br>
+	                        			<b>Classroom:</b> Olin 310  
+	                        			<br>
+	                        			<br>
+	                        			<b>Time:</b> 2a (Mondays &amp Wednesdays 9:50-11am; Fridays 9:40-10:40am)
+	                        			<br>
+										<br>
+										<b>Course Schedule:</b> You can find important deadlines in the <a href="../cs201_data_structures/schedule_w26.html">course schedule</a>.
+	                        			<br>
+	                        			<br>
+	                        			<b> Prefect and Course Staff:</b> Seth Vizel (prefect), Jackie Faust, and Molly Bratton (course staff)
+	                        			<br>
+	                        			<br>
+										<b> Required Course Materials: </b> Programiz, which is a free website. I will include links to the readings within Moodle. 
+	                        		</p>
+	                        		<p>
+	                        			<br>
+	                        			<br>
+	                        			<b>Student Drop-In Hours (also known as Office Hours):</b>
+	                        			<ul>
+	                        				<li><b>Jean (Olin 339):</b> Mondays 3:15-4:45pm, Thursdays 1:45-3:15pm</li>
+											<li><b>Prefect Seth Vizel (TBD):</b> TBD</li>
+											<li><b>Course Staff Jackie Faust (Olin 310):</b> TBD</li>
+											<li><b>Course Staff Molly Bratton (Olin 310):</b> TBD</li>
+	                        				<li><a href="https://calendar.app.google/7cfpgECbWgXVxGLB8">Book an Appointment with Jean</a></li>
+											<li>Book individual or small group appoinments with Seth, Jackie, or Molly by finding their emails on the <a href="https://www.carleton.edu/directory/">Campus Directory</a></li>
+	                        			</ul>
+	                        		</p>
+	                        	<br>
+	                        	<br>
+	                        	<h2 id = "overview"> Overview </h2>
+	                        	<br>
+	                        	<p>
+	                        	"There must have been a better way to do that last assignment from Intro to CS…"
+								<br>
+								Data Structures is all about patterns in trying to organize information. All of the software that we create uses data, in one form or another. There are smart ways to store and retrieve this information. How can you do so, and how can you quantify how efficient your techniques are?
+								<br>
+								<br>
+								<b>Prerequisities:</b> CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere. Please talk to me if your background is something other than CS111 or AP CS in high school.
+								</p>
+								<br>
+	                        	<br>
+
+	                        	<h2 id = "learning_goals"> Learning Goals </h2>
+	                        	<br>
+	                        	<p>
+								Source: Porter, L., Zingaro, D., Liao, S. N., Taylor, C., Webb, K. C., Lee, C., & Clancy, M. (2019, July). BDSI: A validated concept inventory for basic data structures. In Proceedings of the 2019 ACM Conference on International Computing Education Research (pp. 111-119).
+								<br>
+								<br>
+	                        	At the end of this course, you will be able to:
+								<ol>
+									<li>Analyze runtime efficiency and real-world implications of algorithms related to data structure design</li>
+									<li>Select appropriate abstract data types for use in a given application</li>
+									<li>Compare data structure tradeoffs to select the appropriate implementation for an abstract data type</li>
+									<li>Design and modify data structures capable of insertion, deletion, search, and related operations</li>
+									<li>Trace through and predict the behavior of algorithms (including code) designed to imeplent data structure operations</li>
+									<li>Identify and remedy flaws in a data structure implementation that may cause its behavior to differ from the intended design</li>
+								</ol>
+	                        	</p>
+
+	                        	<h2 id = "admin"> Course Administration </h2>
+	                        	<br>
+	                        	<p>
+	                        		<b>Moodle:</b> All course related materials, assignments, projects, readings, and resources will be posted here.
+	                        		<br>
+									<br>
+
+									<b>GradeScope:</b> You will turn in most of your assignments here.
+									<br>
+									<br>
+
+									<b>Languages:</b> Kotlin
+									<br>
+									<br>
+
+									<b>IDE:</b> VSCode. You should download VSCode to your personal machine. We’ll also be doing a fair amount of work in text editors and the terminal.
+									<br>
+									<br>
+									
+									<b>Default environment:</b> I will default to Mac OSX in class, for development.
+									<br>
+									<br>
+
+									I am committed to the principle of universal learning. This means that our physical and virtual spaces, our practices, and our interactions should be as inclusive as possible. <b>Mutual respect, civility, and the ability to listen and observe others carefully are crucial to universal learning.</b> I strive to create an inclusive and respectful classroom that values diversity. Our individual differences enrich and enhance our understanding of one another and of the world around us. This class welcomes the perspectives of all ethnicities, genders, religions, ages, sexual orientations, disabilities, socioeconomic backgrounds, regions, and nationalities.
+	                        	</p>
+	                        	<br>
+								<br>
+	                        	
+	                        	<h2 id = "expectations"> Expectations </h2>
+	                        	<br>
+	                        	<p>
+	                        	<b>Attendance:</b> Attendance in class is expected.
+	                        	<br>
+	                        	<br>
+
+	                        	<b> Communication:</b> I expect you to check Moodle every day for updates on activities and assignments. All out-of-class written communication will happen via the class announcement forum. Please make sure you are checking it regularly and/or have email or push notifications setup. Each class day will have preparation assignments for you to complete before class. All materials will be released at least 48 hours before they are due.
+	                        	<br>
+	                        	<br>
+
+	                        	<b>Technical Issues:</b> If you experience significant technological problems that limit your ability to participate, please contact the ITS Helpdesk at 507-222-5999 or helpdesk@carleton.edu. For announcements of known technical issues, visit the Helpdesk portal.
+	                        	<br>
+	                        	<br>
+
+	                        	<b>Extenuating Circumstances:</b> If your personal situation (due to COVID-19 illness or other circumstances) begins to impact your ability to engage with the course, please let me know and contact the Dean of Students Office.
+	                        	</p>
+	                        	<br>
+	                        	<br>
+
+	                        	<h2 id = "help"> Getting Help </h2>
+	                        	<br>
+	                        	<p>
+                        		<b>Professor and Prefect Drop-In Hours:</b> Student drop-in hours are a great time to clear up any lingering confusion you may have about certain concepts, ask about the daily readings and assignments, work through ideas, or just talk about something in the course or in computer science generally or in life that’s piqued your interest. These time slots are for you, so use them! If for whatever reason you cannot make it to my student drop-in hours, feel free to make an appointment to see me (info at the top of this page).
+                        		
+								<br>
+	                        	<br>
+
+								<b>Lab Assistant Hours:</b> Lab assistant hours are another opportunity to clear up any confusion or get help with debugging your code. Lab assistant hours are held in Olin 310 and you can get help for this class whenever there is a lab assistant who is comfortable with helping with CS201 material. The lab assistant schedule, along with the classes they can help with, is posted on the doors of Olin 310 and will be posted on the Moodle site for this class once available.
+                        		
+								<br>
+	                        	<br>
+
+                        		<b>Accommodations for Students with Disabilities:</b> Carleton College is committed to providing equitable access to learning opportunities for all students. The Office of Accessibility Resources (Henry House, 107 Union Street) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact OAR@carleton.edu or call Sam Thayer (’10), Director of the Office of Accessibility Resources (x4464), to arrange a confidential discussion regarding equitable access and reasonable accommodations.
+                        		<br>
+	                        	<br>
+
+                        		<b>Assistive Technologies:</b> The Assistive Technologies program brings together academic and technological resources to complement student classroom and computing needs, particularly in support of students with physical or learning disabilities. Accessibility features include text-to-speech (Kurzweil), speech-to-text (Dragon) software, and audio recording Smartpens. If you would like to know more, contact aztechs@carleton.edu or visit <a href="go.carleton.edu/aztech">go.carleton.edu/aztech</a>.
+	                        	</p>
+	                        	<br>
+	                        	<br>
+	                        	
+	                        	<h2 id = "evaluation"> Evaluation </h2>
+	                        	<br>
+								<p>
+								One of my goals for you in this course is for you to continue to develop as an independent programmer and learner. I’m much more interested in what skills and understanding you have mastered by the end of the course than the exact pace at which you master them. However, it isn’t healthy for you or me if you leave everything to the last minute. Therefore, my goal with the following evaluation metrics is to balance providing you flexibility to learn at your own pace while also making sure to spread your learning out over the entire term. 
+								</p>
+								<br>
+								<p>
+								Towards that end, your performance in this class will be evaluated in three different ways according to learning goals for the course:
+								<ol>
+									<li><b>Preparation Assignments:</b> Almost all class meetings will have an associated preparation assignment to be completed <b>BEFORE</b> class time to ensure you are ready for the material covered in class. These tasks will be assessed based on completion, not correctness.</li>
+									<li><b>Deliverables:</b> Deliverables allow you to practice applying and implementing the concepts covered in class more deeply and with the support of the professor, prefect, course staff, and other resources. Your deliverable will be evaluated based on how closely it meets the requirements in each level outlined in the specifications grading scale below.</li>
+									<li><b>Exams:</b> Exams allow you to demonstrate your individual understanding of concepts covered in class. Exam questions will target your understanding of class concepts at different levels according to specifications grading scale below.</li>
+								</ol>
+								</p>
+	                        	<b>Specifications Grading Scale</b>
+	                        	<br>
+	                        	<p>
+	                        		<b>Preparation Assignments:</b> Since preparation assignments are meant to preview the topic we will cover each class, these are graded for completion, not based on specifications.
+									<br>
+									<br>
+									<b>Deliverables:</b> Each deliverable that you turn in will be evaluated against a checklist of specifications related to one or more of the course learning objectives. I will distribute the checklists I’ll use to assess each deliverable so that you know exactly what constitutes each of these levels.
+									<br>
+									<br>
+									<b>Exams:</b> Each exam topic will have questions targeting your understanding at "Proficient" and "Exemplary" levels. These questions will be marked with the topic and level of understanding. 
+									<br>
+									<br>
+									Below is the description of the four-level scale:
+	                        	</p>
+	                        	<ol>
+	                        		<li><b>Insufficient Evidence:</b> The deliverable or exam question was not turned in or does not engage with the prompt in the intended manner.</li>
+	                        		<li><b>Not Yet Proficient:</b> The deliverable or exam question demonstrates progress towards the learning objective(s), but needs further work and engagement to reach proficiency.</li>
+	                        		<li><b> Proficient:</b> The deliverable or exam question demonstrates achievement of the learning objective(s).</li>
+	                        		<li><b>Exemplary:</b> The deliverable or exam question demonstrates achievement of the learning objective(s) at a higher level (e.g. more nuance, sophistication, etc).</li>
+	                        	</ol>
+	                        	<b>Deadline Flexibility</b>
+	                        	<p>
+	                        		In this course, we need to balance flexibility for individuals with structure for the class as a whole. I also want to help you avoid procrastinating to the point that you can’t get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work.
+	                        		<br>
+	                        		<br>
+									<b>Preparation assignments</b> are due 5 minutes after the start of the class meeting to account for slight delays in submission while enabling you to be prepared for the class it is associated with. 
+	                        		<br>
+	                        		<br>
+	                        		<b>Deliverables</b> have a 1-hour grace period after their posted due date and time to account for slight technical delays in submission while allowing evaluation of submissions to start soon after the due date.
+	                        		<br>
+	                        		<br>
+									<b>Exams</b> must be taken during their designated times. Please talk to Jean if you need to make alternate arrangements.
+									<br>
+	                        		<br>
+	                        		If you’re staring down a deadline that you know you can’t meet, or if you’ve fallen behind, <b>get in touch with me immediately and we’ll make arrangements.</b> While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning. 
+									<br>
+	                        		<br>
+									<b>Per Carleton policy, all extensions for end of term work need to go through your <a href="https://www.carleton.edu/dean-of-students/meet/">class dean</a>.</b>
+	                        	</p>
+	                        	<br>
+								<b>Revision Policy</b>
+								<p>
+	                        	Learning is not a linear process, and learning involves making mistakes and learning from them. Below is the revision policy for each category of work.
+								<br>
+								<br>
+								<b>Preparation assignments</b>
+								<br>
+								<b>You cannot revise preparation assignments.</b> These are assessed based on completion, not correctness, so revisions aren't necessary.
+								<br>
+								<br>
+								<b>Deliverables</b>
+	                        	<ul>
+									<li>You may revise any deliverable, <b>except for anything due in Week 10 or Finals</b>, as there will not be enough time to revise before grades are due.</li>
+	                        		<li><strong>You must turn in a submission that clears at least "Not Yet Proficient" within the 1-hour grace period of the deadline to be eligible for a revision, so I encourage you to turn in a deliverable, even if incomplete.</strong> "Not Yet Proficient" means that there is some evidence of an attempt to meet the learning objectives or answer the prompt in the intended manner.</li>
+									<li>You may revise and resubmit individual deliverables ONCE within a week after its evaluation has been released. You may NOT copy a classmate's code in the revisions for your deliverable. I reserve the right to withhold an update to your grade and ask you to explain your revisions if I suspect a violation of this policy.</li>
+	                        		<li>Along with your revision, you need to submit a Google Form asking you some questions about what you chose to revise, how you responded to feedback, how the revisions improve the deliverable, etc. <strong>If you don't fill out this form, the course staff and I will NOT re-evaluate your revisions.</strong></li>
+	                        	</ul>
+								</p>
+								<br>
+								<p>
+								<b>Exams</b>
+								<br>
+								You may revise your answers to preceding exam questions during the Exam 3 and Exam 4 timeslots, because Exam 3 will cover fewer topics because of mid-term break and Exam 4 is during the 2.5 hour-long final exam time slot. Questions on exam revisions will be analogous, but not exactly the same, to the original exam.
+								</p>
+								<br>
+	                        	<b>How Specifications Grading Translates to Course Grades</b>
+								<p>
+								You need to clear the letter grade threshold in <b>all three categories</b>: preparation assignments, deliverables, and exams. This means you cannot rely on any one category to "boost" your grade
+								<ol>
+									<li><b>To earn a D:</b>You must have completed at least 65% of preparation assignments, 50% of deliverables at Proficient, and 50% of exam topics at Proficient.</li>
+	                        		<li> <b>To earn a C:</b> You must have completed at least 75% of preparation assignments, 75% of deliverables at Proficient, and 75% of exam topics at Proficient.</li>
+	                        		<li><b>To earn a B:</b> You must have completed at least 85% of preparation assignments, 100% of deliverables at Proficient, and 100% of exam topics at Proficient.</li>
+									<li><b>To earn an A:</b> You must have completed at least 95% of preparation assignments, 90% of deliverables at Exemplary and the remaining 10% of deliverables at Proficient, and 90% of exam topics at Exemplary and the remaining 10% of exam topics at Proficient.</li>
+									<li>If you are between letter grades, +/- grades will be awarded based on which letter grade you are closer to (i.e. if you're closer to an A than a B, you get an A-; if you're closer to a B, you get a B+). </li>
+									<li>There will be approximately 24 preparation assignments, 12 deliverables, and 13 exam topics throughout the term.</li>
+									<li>In the final determination of course grades, if you have any deliverables at "Not Yet Proficient", they can be balanced out with an equal number of deliverables at "Exemplary" to become "Proficients", e.g. one deliverable at "Not Yet Proficient" and one deliverable at "Exemplary" will balance out to two "Proficients".</li>
+	                        	</ol>
+								</p>
+	                        	<h2 id = "honesty"> Doing Honest Work </h2>
+								<br>
+								<b>Proper Attribution</b>
+								<p>
+									Computer Science is a collaborative discipline, &amp people who apply computer science concepts and skills both shape and are shaped by social, political, &amp cultural environments beyond themselves. You are encouraged to collaborate with your classmates to learn, but collaboration comes with additional repsonsibilities:
+								</p>
+								<ul>
+									<li><b>Whether you are working in a team or individually, it is your responsibility to contribute equally and fully to the final product.</b> For example, it is not acceptable to let a teammate “finish the project” without you and put your name on it before submitting it, or work on significant portions of the project without you, or any permutation of this. When pair programming, I expect you to actively work side-by-side with your partner the majority of the time.</li>
+
+									<li><b>Whether you are working in a team or individually, it is your responsibility to be able to explain and/or reproduce your solution individually, if asked.</b> If you do not understand the solution, then you did not contribute fully to the project, and this will hinder your learning of the course material.</li>
+
+									<li><b>Whether you are working in a team or individually, it is your responsibility to follow the written and stated guidelines for any particular project.</b> This includes guidelines from both me (e.g. tools and resources you can use) and your teammates (e.g. when to show up for team meetings).</li>
+
+									<li><b> When you put your name on an assignment or deliverable, it is a contract between you, your teammates (if applicable), and me that this work represents your own work and not the work of someone else.</b> It is never acceptable to turn in a program, or a problem solution, that you have found anywhere (on the Internet, in your textbook or another book, from a friend who took this course before) or commissioned as your own. Making cosmetic changes to someone else’s program or solution (such as changing the variable names or comments) is also not acceptable.</li>
+									
+									<li><b>Whether you are working in a team or individually, it is your responsibility to credit any assistance you receive.</b> If you receive assistance from anyone (another book, a lab assistant, a classmate, me), you must properly credit your source. If a piece of your program utilizes outside assistance, you might include the following in your program’s comments:</li>
+								</ul>
+								<code>
+								# Method to decide how much financial aid students should receive
+								<br>
+								# I used this StackOverflow post to refresh on the syntax for writing conditional statements in Python: https://stackoverflow.com/link-to-post
+								</code>
+								<br>
+								<br>
+								<b>AI Policy</b>
+								<p>
+									In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with academic honesty together. There are many many ways that generative AI is (sort of) helping you and some are more clearly acceptable or unacceptable than others. I can’t make an exhaustive list of what is allowed and isn’t, because there is just too much and something new is going to pop up within the ten weeks of this term. I will do my best to guide you, but you also are going to need to use good judgment at times (and don’t rely on the AI’s judgment!).
+									<br>
+									<br>
+									If you are in a borderline situation, you could try prefacing your request with something like the following: “I’m working on a programming assignment and need some guidance. I’m not looking for the direct solution, but rather help understanding the concepts involved and strategies for approaching the problem. Could you please provide hints, explanations of relevant topics, or suggest debugging techniques based on my question, without giving away the exact code?”
+									<br>
+									<br>
+									Clearly unacceptable:
+									<ul>
+										<li>Pasting the entire assignment prompt into anything (even if you don’t use the code that comes out)</li>
+										<li>Using GitHub Co-pilot extension in VSCode (If you already have it, you must <a href="https://docs.github.com/en/copilot/how-tos/configure-personal-settings/configure-in-ide#enabling-or-disabling-github-copilot">disable it for all course work</a>.)</li>
+										<li>Submitting for credit any code that you did not write yourself (and wasn’t from the starter code). This class is about learning to write the code yourself after all!</li>
+									</ul>
+									<br>
+									<br>
+									Clearly acceptable:
+									<ul>
+										<li>Asking GenAI to give you practice exam questions to study</li>
+										<li>Asking GenAI to explain a class concept that you are struggling with (but triple check it is giving accurate information!)</li>
+									</ul>
+									<br>
+									<br>
+									Borderline (i.e. you could easily slip into unacceptable):
+									<ul>
+										<li>Asking GenAI to help you understand what an assignment is asking</li>
+										<li>Asking GenAI to help you understand a bug or error on an assignment</li>
+										<li>Asking GenAI a question instead of coming to drop-in hours or talking to me, the prefect, or the course staff.</li>
+									</ul>
+								</p>
+								<br>
+								<br>
+								<p>
+									Per Carleton policy, I am required to report cases of suspected academic dishonesty to the Dean's office.
+								</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--             <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/3.jpg" alt=" " class="img-responsive" />
+            </div> -->
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<!-- //about -->
+<!-- footer -->
+<div class="footer"><a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: salac (at) carleton (dot) edu</p>
+                    <p><a href="https://www.linkedin.com/in/jeansalac/">LinkedIn</a></p>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                </div>
+                <div class="clearfix"> </div>
+			</div>
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+                    <ul>
+						<li class="active"><a href="../../index.html">Home</a></li>
+						<li><a href="../../research.html">Research</a></li>
+						<li><a href="../../teaching.html">Teaching</a></li>
+						<li><a href="../../impact.html">Impact</a></li>
+						<li><a href="../../media.html">In the News</a></li>
+						<!--<li><a href="#CONTACT">Contact</a></li>-->
+					</ul>
+				</div>
+				<div class="footer-grids1-right">
+					<p class="animated wow slideInRight" data-wow-delay="0s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="../../js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
