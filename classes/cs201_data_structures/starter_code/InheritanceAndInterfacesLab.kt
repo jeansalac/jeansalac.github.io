@@ -30,11 +30,11 @@ fun main(){
     // student1.declareMajor("Juggling")
 
     // Un-Comment the lines below to test your solution to Prep Question 2
-    // var student1 = Student()
-    // student1.courses = mutableListOf("PSYC200", "CS257", "EDUC262")
-    // student1.printCourses()
+    // var studentRec1 = StudentRecord()
+    // studentRec1.courses = mutableListOf("PSYC200", "CS257", "EDUC262")
+    // studentRec1.printCourses()
 
-    // var jean = Professor()
-    // jean.courses = mutableListOf("CS201")
-    // jean.printCourses()
+    // var jeanRec = ProfessorRecord()
+    // jeanRec.courses = mutableListOf("CS201")
+    // jeanRec.printCourses()
 }
